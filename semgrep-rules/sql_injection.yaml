@@ -1,0 +1,12 @@
+rules:
+  - id: sql-injection-flow
+    languages: [python]
+    message: User input flows into SQL query
+    severity: ERROR
+    mode: taint
+
+    pattern-sources:
+      - pattern: input(...)
+
+    pattern-sinks:
+      - pattern: execute(...)
