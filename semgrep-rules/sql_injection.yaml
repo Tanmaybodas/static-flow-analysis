@@ -9,4 +9,4 @@ rules:
       - pattern: input(...)
 
     pattern-sinks:
-      - pattern: cursor.execute(...)
+      - pattern: execute(...)
