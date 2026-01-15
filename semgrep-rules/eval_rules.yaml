@@ -1,5 +1,5 @@
 rules:
-  - id: always-fail
+  - id: eval-detected
     languages: [python]
     message: This rule should always fail
     severity: ERROR
