@@ -1,6 +1,6 @@
 rules:
-  - id: detect-eval
+  - id: always-fail
     languages: [python]
-    message: Avoid using eval
+    message: This rule should always fail
     severity: ERROR
-    pattern: eval(...)
+    pattern: $X
