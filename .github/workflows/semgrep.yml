@@ -2,17 +2,19 @@ name: Semgrep
 
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
 jobs:
   semgrep:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Run Semgrep rules
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Semgrep
         uses: returntocorp/semgrep-action@v1
         with:
           config: semgrep-rules/

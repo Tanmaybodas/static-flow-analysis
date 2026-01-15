@@ -1,4 +1,4 @@
 def hello():
     print("Hello World")
 hello()
-eval("2 + 2")
+eval("2 + 4")
