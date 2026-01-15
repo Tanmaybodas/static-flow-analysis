@@ -2,5 +2,5 @@ rules:
   - id: detect-eval
     languages: [python]
     message: Avoid using eval
-    severity: WARNING
+    severity: ERROR
     pattern: eval(...)
